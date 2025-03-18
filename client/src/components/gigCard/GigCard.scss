@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  /* Prevents width overflow issues */
+  margin: 0;
+  padding: 0;
+}
+
+.parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Ensures cards wrap instead of overflowing */
+  justify-content: center;
+  /* Centers the cards */
+  gap: 20px;
+  /* Adds spacing between cards */
+  padding: 20px;
+}
+
+.gigCard {
+  width: 100%;
+  /* Makes it responsive */
+  max-width: 324px;
+  /* Prevents it from being too large */
+  height: auto;
+  /* Allows height to adjust if needed */
+  border: 1px solid rgb(228, 228, 228);
+  margin-bottom: 40px;
+  overflow: hidden;
+  /* Ensures no content overflows */
+}
+
+.gigCard img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.gigCard .info {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gigCard .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gigCard .user img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gigCard p {
+  color: #111;
+}
+
+.gigCard .star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gigCard .star img {
+  height: 14px;
+  width: 14px;
+}
+
+.gigCard .star span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffc108;
+}
+
+.gigCard hr {
+  height: 0;
+  border: 0.5px solid rgb(228, 228, 228);
+}
+
+.gigCard .detail {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gigCard .detail img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.gigCard .price span {
+  color: #999;
+  font-size: 12px;
+}
+
+.gigCard .price h2 {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: end;
+}
+
+.gigCard .price sup {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* ✅ Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+  .gigCard {
+    width: 90%;
+    /* Make it smaller for smaller screens */
+    max-width: 280px;
+    /* Keep a reasonable max width */
+  }
+}
+
+@media (max-width: 480px) {
+  .gigCard {
+    width: 100%;
+    /* Full width for mobile screens */
+    max-width: 100%;
+  }
+}
