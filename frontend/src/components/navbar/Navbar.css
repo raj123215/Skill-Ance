@@ -1,0 +1,195 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #013914;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+}
+
+/* Active State */
+.navbar.active {
+  background-color: white;
+  color: black;
+}
+
+.navbar.active button {
+  background-color: white !important;
+  color: #1dbf73 !important;
+  border: 1px solid #1dbf73 !important;
+}
+
+/* Container */
+.navbar .container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* Logo Dot */
+.navbar .logo .dot {
+  font-weight: bold;
+  color: #1dbf73;
+}
+
+/* Links Section */
+.navbar .links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.navbar .links span {
+  white-space: nowrap;
+}
+
+/* User Section */
+.navbar .links .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* User Profile Image */
+.navbar .links .user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dropdown Options */
+.navbar .links .user .options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 999;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  font-weight: 300;
+  color: gray;
+}
+
+/* Button Style */
+.navbar .links button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Button Hover & Focus */
+.navbar .links button:hover,
+.navbar .links button:focus {
+  background-color: #1dbf73;
+  border-color: #1dbf73;
+  outline: none;
+}
+
+/* Divider Line */
+.navbar hr {
+  width: calc(100% - 2px);
+  height: 0;
+  border-top: 0.5px solid #ebe9e9;
+  border-bottom: 0.5px solid #ebe9e9;
+}
+
+/* Menu Section */
+.navbar .menu {
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+
+/* Responsive Breakpoints */
+
+/* 1024px Breakpoint */
+@media (max-width: 1024px) {
+  .navbar .container {
+    padding: 15px 10px;
+  }
+
+  .navbar .links {
+    gap: 16px;
+  }
+
+  .navbar .links button {
+    padding: 8px 16px;
+  }
+}
+
+/* 768px Breakpoint */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* 480px Breakpoint */
+@media (max-width: 480px) {
+  .navbar .logo {
+    font-size: 28px;
+  }
+
+  .navbar .container {
+    padding: 10px;
+  }
+
+  .navbar .links {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .navbar .links button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .navbar .menu {
+    font-size: 14px;
+  }
+}

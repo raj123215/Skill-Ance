@@ -1,0 +1,174 @@
+/* Home Section */
+.home .features {
+  background-color: #f1fdf7;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+/* Dark Mode for Features */
+.home .features.dark {
+  background-color: #0d084d;
+}
+
+/* Dark Mode Styles */
+.home .features.dark h1 {
+  color: white !important;
+}
+
+.home .features.dark i {
+  font-weight: 300;
+}
+
+.home .features.dark p {
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+.home .features.dark .title {
+  color: white !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+/* Dark Mode Button */
+.home .features.dark button {
+  background-color: #1dbf73;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: max-content;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Container Styles */
+.home .features .container {
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+/* First Item in Features */
+.home .features .container .item:first-child {
+  flex: 2;
+}
+
+/* Last Item in Features */
+.home .features .container .item:last-child {
+  flex: 3;
+}
+
+/* Item Styles */
+.home .features .container .item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Image in Item */
+.home .features .container .item img {
+  width: 100%;
+}
+
+/* Heading */
+.home .features .container .item h1 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Title Section */
+.home .features .container .item .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Title Image */
+.home .features .container .item .title img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Paragraph */
+.home .features .container .item p {
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+/* Video */
+.home .features .container .item video {
+  width: 720px;
+}
+
+/* Explore Section */
+.home .explore {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+/* Container in Explore */
+.home .explore .container {
+  width: 1400px;
+}
+
+/* Heading in Explore */
+.home .explore .container h1 {
+  color: #555;
+}
+
+/* Items in Explore */
+.home .explore .container .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Single Item in Explore */
+.home .explore .container .items .item {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Image in Explore Item */
+.home .explore .container .items .item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Line Under Item */
+.home .explore .container .items .item .line {
+  width: 50px;
+  height: 2px;
+  background-color: lightgray;
+  transition: all 0.3s ease;
+}
+
+/* Text Under Item */
+.home .explore .container .items .item span {
+  font-weight: 300;
+}
+
+/* Hover Effect on Item */
+.home .explore .container .items .item:hover .line {
+  width: 80px;
+  background-color: #1dbf73;
+}

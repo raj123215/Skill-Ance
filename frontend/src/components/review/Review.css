@@ -1,0 +1,63 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0px;
+}
+
+/* User Section */
+.review .user {
+  display: flex;
+  align-items: center;
+}
+
+/* Profile Picture */
+.review .user .pp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* Country Info */
+.review .user .country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: gray;
+}
+
+/* Country Flag */
+.review .user .country img {
+  width: 20px;
+}
+
+/* Stars Section */
+.review .stars {
+  display: flex;
+  gap: 5px;
+}
+
+/* Star Image */
+.review .stars img {
+  height: 14px;
+  width: 14px;
+}
+
+/* Star Rating */
+.review .stars span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffc108;
+}
+
+/* Helpful Section */
+.review .helpful {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Helpful Icon */
+.review .helpful img {
+  width: 14px;
+}

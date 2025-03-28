@@ -1,0 +1,51 @@
+/* Login Section */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Styles */
+.login form {
+  width: 360px;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Heading in Form */
+.login form h1 {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* Label Styles */
+.login form label {
+  color: gray;
+  font-size: 18px;
+}
+
+/* Input and Textarea Styles */
+.login form input,
+.login form textarea {
+  padding: 20px;
+  border: 1px solid rgb(216, 214, 214);
+}
+
+/* Button Styles */
+.login form button {
+  border: none;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #1dbf73;
+  cursor: pointer;
+}
+
+/* Error Span */
+.login form span {
+  color: red;
+  font-size: 12px;
+}
